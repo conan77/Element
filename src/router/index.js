@@ -23,10 +23,18 @@ const router = new Router({
   routes: [
     // 首先是登录页的路由
     {
+      path: "/",
+      name: "Signin",
+      meta: {
+        title: "报表平台"
+      },
+      component: Signin
+    },
+    {
       path: "/signin",
       name: "Signin",
       meta: {
-        title: "Auto Vue"
+        title: "报表平台"
       },
       component: Signin
     },
